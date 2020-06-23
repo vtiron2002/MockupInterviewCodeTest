@@ -41,13 +41,14 @@
 
 		<script>
 			const buttons = document.querySelectorAll('.options button')
-            buttons.forEach(b => b.addEventListener('click', ({target}) => {
-                buttons.forEach(l => l.classList = '')
-                if (target.classList !== 'selected') {
-                    target.classList = 'selected'
-                }
-     
-            }))
+			buttons.forEach((b) =>
+				b.addEventListener('click', ({ target }) => {
+					buttons.forEach((l) => (l.classList = ''))
+					if (target.classList !== 'selected') {
+						target.classList = 'selected'
+					}
+				}),
+			)
 		</script>
 	</body>
 </html>

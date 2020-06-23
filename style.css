@@ -21,7 +21,9 @@ body {
 	min-height: 100vh;
 	color: var(--textColor);
 	display: flex;
-	flex-direction: column;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 main {
@@ -58,8 +60,8 @@ p {
 	color: var(--buttonText);
 	font-weight: 500;
 	cursor: pointer;
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
-  transition: .2s ease;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+	transition: 0.2s ease;
 }
 
 .options button.selected {
@@ -89,8 +91,8 @@ footer button {
 	background: #d7d7d7;
 	height: 0.6rem;
 	width: 0.6rem;
-  border-radius: 50%;
-  cursor: pointer;
+	border-radius: 50%;
+	cursor: pointer;
 }
 
 .pagination .circle.selected {

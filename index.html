@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MockUp Interview Code Test</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<main>
+			<h2>
+				What are your main <br />
+				areas of focus?
+			</h2>
+			<p>This will help us build a personalized experience for you</p>
+
+			<div class="options">
+				<button class="selected">Blood Glucose</button>
+				<button>Medication</button>
+				<button>Food Tracking</button>
+				<button>Exercise</button>
+				<button>Weight Management</button>
+				<button>Blood Pressure</button>
+				<button>A1C</button>
+			</div>
+		</main>
+
+		<footer>
+			<button class="back">BACK</button>
+
+			<div class="pagination">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle selected"></div>
+			</div>
+
+			<button class="done">DONE</button>
+		</footer>
+
+		<script>
+			const buttons = document.querySelectorAll('.options button')
+            buttons.forEach(b => b.addEventListener('click', ({target}) => {
+                buttons.forEach(l => l.classList = '')
+                if (target.classList !== 'selected') {
+                    target.classList = 'selected'
+                }
+     
+            }))
+		</script>
+	</body>
+</html>

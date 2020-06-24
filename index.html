@@ -44,9 +44,7 @@
 			buttons.forEach((b) =>
 				b.addEventListener('click', ({ target }) => {
 					buttons.forEach((l) => (l.classList = ''))
-					if (target.classList !== 'selected') {
-						target.classList = 'selected'
-					}
+					target.classList.toggle('selected')
 				}),
 			)
 		</script>
